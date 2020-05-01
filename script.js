@@ -1,5 +1,5 @@
 // Work hour varibles
-var workDay = {
+var workDayHours = {
     "9AM": "",
     "10AM": "",
     "11AM": "",
@@ -14,10 +14,12 @@ var workDay = {
 // Function to run page and store workDay when ready/updated
 $(document).ready(function(){
     if(!localStorage.getItem("workDay")) {
-      updateCalendar(workDay);
+      updateCalendar(workDayHours);
     } else {
       updateCalendar(JSON.parse(localStorage.getItem("workDay")));
     }
   })
 
+// Code to capture today's date
+$('#date-today h6').text(moment().format('dddd') + ", " + moment().format('MMMM Do'));
 
