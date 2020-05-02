@@ -42,5 +42,6 @@ for(const property in workDayHours) {
   counter ++;
 }
 
+// event listener on button
 $("button").click(function() {
  
