@@ -1,90 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="https://kit.fontawesome.com/340330cae2.js" crossorigin="anonymous"></script>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Work Day Scheduler</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://kit.fontawesome.com/340330cae2.js" crossorigin="anonymous"></script>
+  
+  
 </head>
 <body>
-    <header class="container-fluid border-bottom border-dark mb-2">
-        <div class="row justify-content-center"><h1>Work Day Scheduler</h1></div>
-        <div class="row justify-content-center"><h6>A simple calendar app for scheduling your workday</h6></div>
-        <div class="row justify-content-center" id="date-today"><h6></h6></div>
-    </header>
+  <header class="container-fluid border-bottom border-dark mb-2">
+    <div class="row justify-content-center"><h1>Work Day Scheduler</h1></div>
+    <div class="row justify-content-center"><h5>A simple calendar app for scheduling your work day</h5></div>
+    <div class="row justify-content-center" id="date-today"><h6></h6></div>
+  </header>
 
-    <div class="container">
+  <div class="container">
 
-        <div id="calendar-row9am" class="row justify-content-lg-center border-top border-bottom">
-            <div id="time9am"class="col-lg-1">9AM</div>
-            <textarea rows="3" id="text-entry9am" class="col-lg-10"></textarea>
-            <button id="save" class="col-lg-1"><i class="far fa-save"></i></button>
-        </div>
+    <div id="calendar-row1" class="row justify-content-lg-center border-top border-bottom">
+      <div id="time1"class="col-lg-1">9AM</div>
+      <textarea rows="3" id="task1" class="col-lg-10"></textarea>
+      <button id="save" class="col-lg-1"><i class="far fa-save"></i></button>
+  </div>
 
-        <div id="calendar-row10am" class="row justify-content-lg-center border-top border-bottom">
-            <div id="time10am"class="col-lg-1">10AM</div>
-            <textarea rows="3" id="text-entry10am" class="col-lg-10"></textarea>
-            <button id="save" class="col-lg-1"><i class="far fa-save"></i></button>
-        </div>
+  <div id="calendar-row2" class="row justify-content-lg-center border-top border-bottom">
+      <div id="time2"class="col-lg-1">10AM</div>
+      <textarea rows="3" id="task2" class="col-lg-10"></textarea>
+      <button id="save" class="col-lg-1"><i class="far fa-save"></i></button>
+  </div>
 
-        <div id="calendar-row11am" class="row justify-content-lg-center border-top border-bottom">
-            <div id="time11am"class="col-lg-1">11AM</div>
-            <textarea rows="3" id="text-entry11am" class="col-lg-10"></textarea>
-            <button id="save" class="col-lg-1"><i class="far fa-save"></i></button>
-        </div>
+  <div id="calendar-row3" class="row justify-content-lg-center border-top border-bottom">
+      <div id="time3"class="col-lg-1">11AM</div>
+      <textarea rows="3" id="task3" class="col-lg-10"></textarea>
+      <button id="save" class="col-lg-1"><i class="far fa-save"></i></button>
+  </div>
 
-        <div id="calendar-row12pm" class="row justify-content-lg-center border-top border-bottom">
-            <div id="time12pm"class="col-lg-1">12PM</div>
-            <textarea rows="3" id="text-entry12pm" class="col-lg-10"></textarea>
-            <button id="save" class="col-lg-1"><i class="far fa-save"></i></button>
-        </div>
+  <div id="calendar-row4" class="row justify-content-lg-center border-top border-bottom">
+      <div id="time4"class="col-lg-1">12PM</div>
+      <textarea rows="3" id="task4" class="col-lg-10"></textarea>
+      <button id="save" class="col-lg-1"><i class="far fa-save"></i></button>
+  </div>
 
-        <div id="calendar-row1pm" class="row justify-content-lg-center border-top border-bottom">
-            <div id="time1pm"class="col-lg-1">1PM</div>
-            <textarea rows="3" id="text-entry1pm" class="col-lg-10"></textarea>
-            <button id="save" class="col-lg-1"><i class="far fa-save"></i></button>
-        </div>
+  <div id="calendar-row5" class="row justify-content-lg-center border-top border-bottom">
+      <div id="time5"class="col-lg-1">1PM</div>
+      <textarea rows="3" id="task5" class="col-lg-10"></textarea>
+      <button id="save" class="col-lg-1"><i class="far fa-save"></i></button>
+  </div>
 
-        <div id="calendar-row2pm" class="row justify-content-lg-center border-top border-bottom">
-            <div id="time2pm"class="col-lg-1">2PM</div>
-            <textarea rows="3" id="text-entry2pm" class="col-lg-10"></textarea>
-            <button id="save" class="col-lg-1"><i class="far fa-save"></i></button>
-        </div>
+  <div id="calendar-row6" class="row justify-content-lg-center border-top border-bottom">
+      <div id="time6"class="col-lg-1">2PM</div>
+      <textarea rows="3" id="task6" class="col-lg-10"></textarea>
+      <button id="save" class="col-lg-1"><i class="far fa-save"></i></button>
+  </div>
 
-        <div id="calendar-row3pm" class="row justify-content-lg-center border-top border-bottom">
-            <div id="time3pm"class="col-lg-1">3PM</div>
-            <textarea rows="3" id="text-entry3pm" class="col-lg-10"></textarea>
-            <button id="save" class="col-lg-1"><i class="far fa-save"></i></button>
-        </div>
+  <div id="calendar-row7" class="row justify-content-lg-center border-top border-bottom">
+      <div id="time7"class="col-lg-1">3PM</div>
+      <textarea rows="3" id="task7" class="col-lg-10"></textarea>
+      <button id="save" class="col-lg-1"><i class="far fa-save"></i></button>
+  </div>
 
-        <div id="calendar-row4pm" class="row justify-content-lg-center border-top border-bottom">
-            <div id="time4pm"class="col-lg-1">4PM</div>
-            <textarea rows="3" id="text-entry4pm" class="col-lg-10"></textarea>
-            <button id="save" class="col-lg-1"><i class="far fa-save"></i></button>
-        </div>
+  <div id="calendar-r0w8" class="row justify-content-lg-center border-top border-bottom">
+      <div id="time8"class="col-lg-1">4PM</div>
+      <textarea rows="3" id="task8" class="col-lg-10"></textarea>
+      <button id="save" class="col-lg-1"><i class="far fa-save"></i></button>
+  </div>
 
-        <div id="calendar-row5pm" class="row justify-content-lg-center border-top border-bottom">
-            <div id="time5pm"class="col-lg-1">5PM</div>
-            <textarea rows="3" id="text-entry5pm" class="col-lg-10"></textarea>
-            <button id="save" class="col-lg-1"><i class="far fa-save"></i></button>
-        </div>
+  <div id="calendar-row9" class="row justify-content-lg-center border-top border-bottom">
+      <div id="time9"class="col-lg-1">5PM</div>
+      <textarea rows="3" id="task9" class="col-lg-10"></textarea>
+      <button id="save" class="col-lg-1"><i class="far fa-save"></i></button>
+  </div>
 
-    </div>
+</div>
 
-    <div class="container-fluid">
-        <footer class="row"><br><br></footer>
-      </div>
+  <div class="container-fluid">
+    <footer class="row">
+      <br><br>
+    </footer>
+  </div>
 
-    
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.25.0/moment.min.js"></script>
-    <script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.25.0/moment.min.js"></script>
 
+  <script src="script.js"></script>
 </body>
 </html>
