@@ -23,14 +23,15 @@ $(document).ready(function(){
 // Code to capture today's date
 $('#date-today h6').text(moment().format('dddd') + ", " + moment().format('MMMM Do'));
 
+// Code to identify current, past and future time block
 let counter = 1;
 for(const property in workDayHours) {
-  var task = "#task" + counter;
+  let task = "#task" + counter;
   $(task).text(workDayHours[property]);
-  var timeId = "#time" + counter;
-  var currentHour = moment().hour();
-  var timeString = $(timeId).text();
-  var timeNumber = hourNumberFromHourString(timeString);  
+  let timeId = "#time" + counter;
+  let currentHour = moment().hour();
+  let timeString = $(timeId).text();
+  let timeNumber = hourNumberFromHourString(timeString);  
   if(timeNumber < currentHour) {
     $(task).addClass("past");
   } else if (timeNumber > currentHour) {
