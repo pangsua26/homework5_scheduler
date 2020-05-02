@@ -50,3 +50,7 @@ $("button").click(function() {
   textString = $(this).siblings("div").text();
   saveTask(textString, taskValue);
 });
+
+function stringNumberReturn(hourString) {
+  
+}
