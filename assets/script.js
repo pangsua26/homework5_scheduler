@@ -45,4 +45,6 @@ for(const property in workDayHours) {
 
 // event listener on button
 $("button").click(function() {
- 
+  taskvalue = $(this).siblings("textarea").val();
+  textString = $(this).siblings("div").text();
+});
