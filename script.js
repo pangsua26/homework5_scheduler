@@ -31,13 +31,13 @@ for(const property in workDayHours) {
   let timeId = "#time" + counter;
   let currentHour = moment().hour();
   let timeString = $(timeId).text();
-  let timeNumber = hourNumberFromHourString(timeString);  
+  let timeNumber = stringNumber(timeString); 
   if(timeNumber < currentHour) {
     $(task).addClass("past");
   } else if (timeNumber > currentHour) {
     $(task).addClass("future");
   } else {
-    $(task).addClass("present");
+    $(task).addClass("current");
   }
   counter ++;
 }

@@ -6,20 +6,16 @@ button {
   border-bottom-right-radius: 10px;
 }
 
-textarea {
-  resize: none;
-}
 
-.past-hour {
-  background-color: gray;
+.current {
+  background-color: rgba(255, 0, 0, 0.726);
+}
+.past {
+  background-color: lightgray;
  
 }
 
-.present-hour {
-  background-color: red;
-}
-
-.future-hour {
+.future {
   background-color: green;
  
 }
