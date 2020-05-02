@@ -27,18 +27,18 @@ $('#date-today h6').text(moment().format('dddd') + ", " + moment().format('MMMM 
 let counter = 1;
 // Code to identify current, past and future properties in work day hours
 for(const property in workDayHours) {
-  let task = "#task" + counter;
+  let taskId = "#task" + counter;
   $(task).text(workDayHours[property]);
   let timeId = "#time" + counter;
   let currentHour = moment().hour();
   let timeString = $(timeId).text();
   let timeNumber = stringNumber(timeString); 
   if(timeNumber < currentHour) {
-    $(task).addClass("past");
+    $(taskID).addClass("past");
   } else if (timeNumber > currentHour) {
-    $(task).addClass("future");
+    $(taskId).addClass("future");
   } else {
-    $(task).addClass("current");
+    $(taskId).addClass("current");
   }
   counter ++;
 }
