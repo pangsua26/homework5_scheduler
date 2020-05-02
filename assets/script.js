@@ -23,8 +23,9 @@ $(document).ready(function(){
 // Code to capture today's date
 $('#date-today h6').text(moment().format('dddd') + ", " + moment().format('MMMM Do'));
 
-// Code to identify current, past and future time block
+// Setting the varible block to start at 1
 let counter = 1;
+// Code to identify current, past and future properties in work day hours
 for(const property in workDayHours) {
   let task = "#task" + counter;
   $(task).text(workDayHours[property]);
