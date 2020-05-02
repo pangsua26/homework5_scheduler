@@ -43,8 +43,9 @@ for(const property in workDayHours) {
   counter ++;
 }
 
-// event listener on button
+// event listener on button and save text value of string
 $("button").click(function() {
   taskvalue = $(this).siblings("textarea").val();
   textString = $(this).siblings("div").text();
+  saveTask(hourString, taskvalue);
 });
