@@ -23,18 +23,19 @@ $(document).ready(function(){
 // Code to capture today's date
 $('#date-today h6').text(moment().format('dddd') + ", " + moment().format('MMMM Do'));
 
-// Setting the varible block to start at 1
+// Setting the varible block counter to start at 1
 let counter = 1;
 // Code to identify current, past and future properties in work day hours
 for(const property in workDayHours) {
   let taskId = "#task" + counter;
-  $(task).text(workDayHours[property]);
+  $(taskId).text(workDayHours[property]);
   let timeId = "#time" + counter;
   let currentHour = moment().hour();
   let timeString = $(timeId).text();
-  let timeNumber = stringNumber(timeString); 
+  let timeNumber = stringNumberReturn(timeString); 
   if(timeNumber < currentHour) {
-    $(taskID).addClass("past");
+    // adding class to past, future, current
+    $(taskId).addClass("past");
   } else if (timeNumber > currentHour) {
     $(taskId).addClass("future");
   } else {
@@ -43,9 +44,9 @@ for(const property in workDayHours) {
   counter ++;
 }
 
-// event listener on button and save text value of string
+// event listener on button and save the task objects taskValue and textString
 $("button").click(function() {
-  taskvalue = $(this).siblings("textarea").val();
+  taskValue = $(this).siblings("textarea").val();
   textString = $(this).siblings("div").text();
-  saveTask(hourString, taskvalue);
+  saveTask(textString, taskValue);
 });
