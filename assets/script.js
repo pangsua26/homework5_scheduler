@@ -41,3 +41,6 @@ for(const property in workDayHours) {
   }
   counter ++;
 }
+
+$("button").click(function() {
+ 
