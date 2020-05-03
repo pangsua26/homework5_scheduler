@@ -51,7 +51,12 @@ $("button").click(function() {
   saveTask(textString, taskValue);
 });
 
-// function to return hours into text string
+// function to return hours into number text string
 function stringNumberReturn(textString) {
+  switch(textString) {
+    case "9 AM": return 9;
+    case "10 AM": return 10;
+    
+  }
   
 }
