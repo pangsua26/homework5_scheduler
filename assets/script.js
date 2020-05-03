@@ -57,7 +57,14 @@ function stringNumberReturn(textString) {
   
 }
 
-// code to start functions
+// Function to run page and store work day hours when ready/updated
+$(document).ready(function(){
+  if(localStorage.getItem("workDayHours")) {
+    updateCalendarTasks(workDayHours);
+  } else {
+    updateCalendarTasks(JSON.parse(localStorage.getItem("workDayHours")));
+  }
+})
 // code to save to local storage
 // code to get item from local storage and display
 // code to update calendar tasks
