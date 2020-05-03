@@ -57,3 +57,7 @@ function stringNumberReturn(textString) {
   
 }
 
+// code to start functions
+// code to save to local storage
+// code to get item from local storage and display
+// code to update calendar tasks
