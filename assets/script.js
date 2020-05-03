@@ -44,15 +44,15 @@ for(const hours in workDayHours) {
 // function to switch hours into number text string to identify current, past, future
 function stringNumberReturn(textString) {
   switch(textString) {
-    case "9 AM": return 9;
-    case "10 AM": return 10;
-    case "11 AM": return 11;
-    case "12 PM": return 12;
-    case "1 PM": return 13;
-    case "2 PM": return 14;
-    case "3 PM": return 15;
-    case "4 PM": return 16;
-    case "5 PM": return 17;
+    case "9AM": return 9;
+    case "10AM": return 10;
+    case "11AM": return 11;
+    case "12PM": return 12;
+    case "1PM": return 13;
+    case "2PM": return 14;
+    case "3PM": return 15;
+    case "4PM": return 16;
+    case "5PM": return 17;
   }
   
 }
