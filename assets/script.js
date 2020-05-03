@@ -11,14 +11,6 @@ var workDayHours = {
   "5PM": "",
 };
 
-// Function to run page and store work day hours when ready/updated
-$(document).ready(function(){
-  if(!localStorage.getItem("workDayHours")) {
-    updateCalendarTasks(workDayHours);
-  } else {
-    updateCalendarTasks(JSON.parse(localStorage.getItem("workDayHours")));
-  }
-})
 
 // Code to capture today's date
 $('#date-today h6').text(moment().format('dddd') + ", " + moment().format('MMMM Do'));
@@ -51,12 +43,18 @@ $("button").click(function() {
   saveTask(textString, taskValue);
 });
 
-// function to return hours into number text string
+// function to switch hours into number text string to identify current, past, future
 function stringNumberReturn(textString) {
   switch(textString) {
     case "9 AM": return 9;
     case "10 AM": return 10;
-    
+    case "11 AM": return 11;
+    case "12 PM": return 12;
+    case "1 PM": return 13;
+    case "2 PM": return 14;
+    case "3 PM": return 15;
+    case "4 PM": return 16;
+    case "5 PM": return 17;
   }
   
 }
