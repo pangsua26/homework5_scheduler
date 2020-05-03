@@ -51,6 +51,7 @@ $("button").click(function() {
   saveTask(textString, taskValue);
 });
 
-function stringNumberReturn(hourString) {
+// function to return hours into text string
+function stringNumberReturn(textString) {
   
 }
