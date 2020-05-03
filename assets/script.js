@@ -11,9 +11,15 @@ var workDayHours = {
   "5PM": "",
 };
 
-
 // Code to capture today's date
 $('#date-today h6').text(moment().format('dddd') + ", " + moment().format('MMMM Do'));
+
+// event listener on button and save the task objects taskValue and textString
+$("button").click(function() {
+  taskValue = $(this).siblings("textarea").val();
+  textString = $(this).siblings("div").text();
+  saveTask(textString, taskValue);
+});
 
 // Setting the varible block counter to start at 1
 let counter = 1;
@@ -35,14 +41,6 @@ for(const property in workDayHours) {
   }
   counter ++;
 }
-
-// event listener on button and save the task objects taskValue and textString
-$("button").click(function() {
-  taskValue = $(this).siblings("textarea").val();
-  textString = $(this).siblings("div").text();
-  saveTask(textString, taskValue);
-});
-
 // function to switch hours into number text string to identify current, past, future
 function stringNumberReturn(textString) {
   switch(textString) {
@@ -58,3 +56,4 @@ function stringNumberReturn(textString) {
   }
   
 }
+
