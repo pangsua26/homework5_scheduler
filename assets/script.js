@@ -12,7 +12,7 @@ var workDayHours = {
 };
 
 // Moment function to capture today's date
-$('#date-today h6').text(moment().format('dddd') + ", " + moment().format('MMMM Do'));
+$("#today-date h6").text(moment().format("dddd") + ", " + moment().format("MMMM Do"));
 
 // Event listener on button and save the task objects taskValue and textString
 $("button").click(function() {
